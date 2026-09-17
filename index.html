@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
-  <meta name="theme-color" content="#101112">
+  <meta name="theme-color" content="#242629">
   <meta name="darkreader-lock">
   <meta name="robots" content="noindex, nofollow">
   <title>Dongsheng Li — Personal Homepage</title>
   <style>
     :root {
       color-scheme: dark;
-      --background: #08090a;
+      --background: #242629;
       --text: #e5e7eb;
       --muted: #b2bac4;
       --line: #303234;
@@ -21,20 +21,18 @@
     body {
       margin: 0;
       min-height: 100vh;
-      padding: 10vh 24px 64px;
+      padding: 10vh 0 64px;
       color: var(--text);
       background: var(--background);
       font: 17px/1.7 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
     main {
-      max-width: 740px;
-      margin: 0 auto;
-      padding: 48px 50px;
-      background: #191b1d;
-      border: 1px solid #303234;
-      border-radius: 12px;
-      box-shadow: 0 20px 60px rgb(0 0 0 / 18%);
+      width: 100%;
+      margin: 0;
+      padding: 48px 24px;
+      background: #17191b;
     }
+    main > header, main > section { max-width: 640px; margin-inline: auto; }
     header { padding-top: 0; }
     h1 { margin: 0 0 12px; font-size: clamp(2.4rem, 7vw, 3.2rem); line-height: 1.2; letter-spacing: -.035em; }
     .affiliation { margin: 0; color: var(--muted); font-size: 1.1rem; }
@@ -47,7 +45,7 @@
     a:hover { text-decoration-color: currentColor; }
     a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
     @media (max-width: 480px) {
-      body { padding: 48px 18px; }
+      body { padding: 48px 0; }
       main { padding: 32px 24px; }
       dl { grid-template-columns: 1fr; gap: 4px; }
       dd + dt { margin-top: 14px; }
